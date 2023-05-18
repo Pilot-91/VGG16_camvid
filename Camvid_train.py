@@ -12,7 +12,9 @@ batch_size = 8
 learning_rate = 0.001
 num_epochs = 10
 
-root_dir = 'dataset/Camvid'
+# root_dir = 'dataset/Camvid'
+root_dir = 'dataset/CamVid'
+
 train_image_folder = 'train'
 train_label_folder = 'train_labels'
 
