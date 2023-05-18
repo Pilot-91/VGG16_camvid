@@ -1,4 +1,4 @@
-# import torch
+import torch
 import torch.nn as nn
 
 class VGG16(nn.Module):
@@ -50,9 +50,14 @@ class VGG16(nn.Module):
 
     def forward(self, x):
         x = self.features(x)
-        x = x.view(x.size(0), -1)
-        x = self.classifier(x)
+        # x = x.view(x.size(0), -1)
+        # x = self.classifier(x)
         return x
 
-
+# VGG = VGG16(32)
+# print(VGG)
+#
+# input = torch.ones(4,3,64,64)
+# output = VGG(input)
+# print(output)
 
